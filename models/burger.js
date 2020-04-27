@@ -1,20 +1,27 @@
-const orm = require("../config/orm")
+const orm = require("../config/orm");
 
-//Insert data into burger table. Takes a string with a burgername,
-// and a value of 0 or 1 (true or false) for devoured
-orm.insertOne()
+// create code that will call ORM functions using specific input for the orm
 
-// Gets all data from burgers table
-orm.selectAll()
+let burger = {
+    selectAll: function(callback) {
+        orm.selectAll("burgers", (result) => {
+            callback(result);
+        });
+    },
 
-//Updates an entry in burger table. takes a string with which value you want to update, 
-//a string with the new value, 
-//and the id of the column you want to update
-orm.updateOne()
+    //insertOne()
+    insertOne: function(cols, vals, callback) {
+        orm.insertOne("burgers",cols,vals,(result) =>{
+            callback(result);
+        })
+    },
 
-
-module.exports = {
-    update: orm.updateOne,
-    selectAll: orm.selectAll,
-    insert: orm.insertOne
+    // updateOne()
+    updateOne: function(objColVals, condition, callback) {
+        orm.updateOne("burgers", objColVals,condition, function(result){
+            callback(result);
+        })
+    }
 }
+
+module.exports = burger;
