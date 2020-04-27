@@ -1,48 +1,22 @@
-# 13-Node-Express-Handlebars
+# Bruger Trackers
 
-![HW-BURGER](https://img.shields.io/badge/HW-BURGER-brightgreen)
+### Descripton
+>A simple fullstack appilcation that uses MVC file structure.
 
-***
+### Table of Contents 
+>[Installation](###Installation) | [Usage](###Usage) |[Testing](###Testing) |[Contributors](###Contributors) | [License](###MIT)
 
-## Description
+### Installation
+>npm install
 
-This project utilizes Node, Express, and Handlebars to allow users to manipulate a database with visual feedback.
+### Usage
+>Uses a combonation of mysql js, express, handlebars js to generate html based on data changed in a database. Express is used to make queries to the mysql database to modify data. The user can update existing data or add data to the burger table. Handlebar templates are used to automatic generate html to display the changes in data
 
-***
+### Testing
+>npm test to run each test file located in the test folder
 
-## Table of Contents
+### Contributors
+>Matthew Link
 
-
-1. [Installation](#Installation)
-2. [License](#License)
-3. [Questions](#Questions)
-4. [Acknowledgements](#Acknowledgements)
-
-
-***
-
-## Installation
-
-To install, clone the repository and run from the command line using "node server" or "nodemon server"
-
-***
-
-
-## License
-
-Copyright (c)  Alex Taylor.
-Released under MIT. See the LICENSE file for more details.
-
-***
-
-## Questions
-
-For any questions, please contact the owner at altays633@gmail.com
-
-![](https://avatars.githubusercontent.com/u/12203157?&s=200)
-
-***
-
-## Acknowledgements
-
-Burger image downloaded from https://pixabay.com/illustrations/food-junk-food-burger-cheeseburger-1104168/. Thanks to Regina and Kendra's husband for the sanity check.
+### License
+MIT
